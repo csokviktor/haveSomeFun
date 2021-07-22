@@ -4,6 +4,10 @@ html(lang='en')
   body
 
     include includes/header.pug
+    if userName
+      h2 Welcome, #{userName}!
+        form(action='/goodbye', method='post')
+          button(type='submit') Goodbye
 
     block content
 
