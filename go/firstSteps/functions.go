@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func demo() {
 	fmt.Println("Test")
 	port := 3000
 	_, err := startWebserver(port, 5)
