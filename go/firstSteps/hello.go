@@ -98,24 +98,35 @@ func main() {
 
 	/*
 		struct
-	*/
-	type user struct {
+		type user struct {
 		ID        int
 		firstName string
 		lastName  string
-	}
+		}
 
-	var u user
-	u.ID = 1
-	u.firstName = "Viktor"
-	u.lastName = "Csok"
-	fmt.Println(u)
+		var u user
+		u.ID = 1
+		u.firstName = "Viktor"
+		u.lastName = "Csok"
+		fmt.Println(u)
 
-	u2 := user{
-		ID:        1,
-		firstName: "Sanyi",
-		lastName:  "Sanyesz",
+		u2 := user{
+			ID:        1,
+			firstName: "Sanyi",
+			lastName:  "Sanyesz",
+		}
+		fmt.Println(u2)
+	*/
+	/*
+		loops
+	*/
+	var i int
+	for i < 5 {
+		fmt.Println(i)
+		i++
+		if i == 3 {
+			break
+		}
 	}
-	fmt.Println(u2)
 
 }
